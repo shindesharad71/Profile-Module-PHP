@@ -6,7 +6,7 @@ if(isset($_POST['login']))
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$username = stripslashes($username);
-		$username = stripslashes($password);
+		$password = stripslashes($password);
 
 		mysqli_query($con,"SELECT * from students where username ='$username' AND password ='$password'");
 
