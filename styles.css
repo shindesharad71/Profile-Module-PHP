@@ -1,0 +1,119 @@
+/* Material Design Login Sign up form styles by Sharad Shinde */
+.forgotlink {
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.forgotlink:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    height: 900px;
+    background-color: #388E3C;
+    border: 1px solid #388E3C;
+}
+
+.wrapper > h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0px 0px 0px 0px;
+}
+
+.wrapper h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #C8E6C9;
+    font-weight: normal;
+    font-family: cursive;
+    padding: 15px 0px 0px 0px;
+}
+
+.form-wrapper {
+    background: #727272;
+    border: 2px solid #99cc99;
+    border-bottom-left-radius: 27px;
+    border-top-right-radius: 27px;
+    text-align: center;
+    margin: 50px auto;
+    width: 350px;
+    padding: 10px;
+    box-shadow: 4px 4px #B6B6B6;
+}
+
+#form-header {
+    padding: 10px 0px 10px 0px;
+}
+
+#form-header h1 {
+    text-align: left;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-family: cursive;
+    color: #212121;
+}
+
+.data {
+    padding: 10px 0px 10px 0px;
+    margin: 0px auto;
+}
+
+.data input {
+    font-family: monospace;
+    background: #C8E6C9;
+    color: #212121;
+    border: none;
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+}
+
+#btn {
+    background: #4CAF50;
+    width: 30%;
+    padding: 12px;
+    font-family: cursive;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+#btn:hover {
+    background-color: #003366;
+    font-weight: bold;
+    color: #fff;
+    border: 2px inset #003366;
+}
+
+#form1 {
+    float: left;
+    margin-right: 25px;
+    padding-top: 55px;
+}
+
+#form2 {
+    float: right;
+}
+
+#big-form-wrapper {
+    text-align: center;
+    margin-left: 21%;
+}
