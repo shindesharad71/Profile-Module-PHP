@@ -26,8 +26,9 @@ $pic = $pic->fetch_object()->pic;
 <center>
 	<div class="wrapper">
 		<h1>Profile Details</h1>
+		<h3><a href="all.php">Show All Profiles</a></h3>
 		<br>
-		<h3><tr><img src="<?php echo $pic; ?>"><small><a class="forgotlink" href="upload.php">change profile pic</a></small></tr></h3>
+		<h3><tr><img src="<?php echo $pic; ?>" height="150" width="150"><small><a class="forgotlink" href="upload.php">change profile pic</a></small></tr></h3>
 		<br>
 		<h3>Name: <?php echo $name->fetch_object()->name; ?></h3>
 		<h3>Email: <?php echo $email->fetch_object()->email; ?></h3>

@@ -40,6 +40,7 @@ session_start();
    				mysqli_query($con,$q);
          		$rows = mysqli_affected_rows($con);
          		echo $rows;
+         		header('location: main.php');
 
 		      }else{
 		         print_r($errors);
