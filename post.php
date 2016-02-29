@@ -15,7 +15,8 @@
 		$password = $_POST['password'];
 		$password = stripcslashes($password);
 
-		$q = "INSERT into students (name, email, username, password) VALUES ('$name','$email','$username','$password')";
+
+		$q = "INSERT into students (name, email, username, password, pic) VALUES ('$name','$email','$username','$password','../img/user.jpg')";
 		mysqli_query($con,$q);
 		$s = mysqli_affected_rows($con);
 		echo $s.' user is successfully registerd </br>';
