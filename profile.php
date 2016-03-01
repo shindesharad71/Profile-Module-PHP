@@ -23,10 +23,10 @@ $pic = $pic->fetch_object()->pic;
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-4">
 				<h1 class="text-left">Hello! <?php echo  $username; ?></h1>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<h4 class="text-right"><a href="all.php">Show All Profiles</a></h4>
 			</div>
 		</div>
@@ -42,18 +42,8 @@ $pic = $pic->fetch_object()->pic;
 			<div class="col-md-7 text-left">
 				<h3><?php echo $name->fetch_object()->name; ?></h3>
 				<h3><?php echo $email->fetch_object()->email; ?></h3><br>
-				<a class="forgotlink" href="logout.php"><br/>logout</a>
+				<a href="logout.php">logout</a>
 			</div>
 
 		</div>
-	</div>
-		
-				
-				
-				
-			
-			
-			<br>
-			
-			
 	</div>
