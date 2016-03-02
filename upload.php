@@ -40,12 +40,10 @@ include 'header.php';
 		      
 		      if(empty($errors)==true){
 		         move_uploaded_file($file_tmp,"img/".$file_name);
-		         echo "Success";
-
 		         $addr = 'img/'.$file_name;
           		$q = "UPDATE students SET pic='$addr' WHERE username='$username'";
    				mysqli_query($con,$q);
-         		header('profile.php');
+         		header('Location:profile.php');
          		
 
 		      }else{
