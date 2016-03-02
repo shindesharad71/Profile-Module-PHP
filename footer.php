@@ -1,4 +1,11 @@
+<br><br>
 
+<div class="container">
+	<div class="row">
+		<h5 class="text-center"><i>links: </i><a href="profile.php">Profile</a> | <a href="logout.php">logout</a></h5>
+	</div>
+</div>
+<br>
 	<style type="text/css">
 	footer{
 		background-color: #000;

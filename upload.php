@@ -46,7 +46,7 @@ include 'header.php';
           		$q = "UPDATE students SET pic='$addr' WHERE username='$username'";
    				mysqli_query($con,$q);
          		$rows = mysqli_affected_rows($con);
-         		header('location: main.php');
+         		header('location: profile.php');
 
 		      }else{
 		         print_r($errors);
@@ -67,7 +67,7 @@ include 'header.php';
 	<legend>Upload Profile Picture</legend>
       <form action="" role="form" method="POST" enctype="multipart/form-data">
          <input type="file" name="image"><br><br>
-         <input type="submit" class="btn btn-info">
+         <input type="submit" class="btn btn-info" value="upload">
          <a href="profile.php" class="btn btn-danger">Cancel & go back</a>
       </form>
       </fieldset>

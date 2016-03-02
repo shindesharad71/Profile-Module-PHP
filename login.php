@@ -1,5 +1,7 @@
 <?php
 	include 'connect.php';
+	$title = 'redirecting....';
+	include 'header.php';
 	session_start();
 if(isset($_POST['login']))
 	{
@@ -16,14 +18,15 @@ if(isset($_POST['login']))
 		{
 			
 			$_SESSION['username'] = $username;
-			echo 'Welcome '.$_SESSION['username'];
-			echo '  <b>login successfully!</b>';
+			echo '<br><br><div class="container">
+			<h3 class="text-center">Welcome <b>'.$_SESSION['username'];
+			echo '</b>  login successfully!</h3></div>';
 			header('Refresh: 1;url=profile.php');
 		} 
 		else 
 		{
-			echo 'Username or Password is invalid!<br/>';
-			echo 'redirecting to login page!';
+			echo '<br><br><h3 class="text-center alert alert-danger">Username or Password is invalid!<br/>';
+			echo 'redirecting to login page!</h3>';
 			header('Refresh: 1;url=index.php');
 		}
 	}

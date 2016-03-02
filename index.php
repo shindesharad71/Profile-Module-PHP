@@ -4,14 +4,17 @@
 
 ?>
 
-<div class="container-fluname">
+<div class="container-fluid">
 	<div class="text-center">
 		<h1>Sign In and Sign up Form</h1>
 	</div>
 </div>
+<br><br>
 <div class="container">
 <!-- 1st form ------------------------------------>
 	<div class="col-md-6">
+	<fieldset>
+		<legend>Sign up</legend>
 		<form class = "form-horizontal" action="signup.php" method="post" role = "form" >
    
 		   <div class = "form-group">
@@ -52,10 +55,13 @@
 		   </div>
 			
 		</form>
+		</fieldset>
 	</div> <!-- END 1st form--->
 
 <!-- 2nd form ------------------------------------>
 	<div class="col-md-6">
+			<fieldset>
+				<legend>Sign in</legend>
 				<form class = "form-horizontal" action="login.php" method="post" role = "form">
 
 				   <div class = "form-group">
@@ -66,7 +72,8 @@
 
 				   <div class = "form-group">
 				      <div class = "col-sm-10 col-md-7">
-				         <input type = "password" class = "form-control" required maxlength="25" name = "password" placeholder = "Password">
+				         <input type = "password" class = "form-control" required maxlength="25" name = "password" placeholder = "Password"><br>
+				         <a href="frgt.php">forgot password?</a>
 				      </div>
 				   </div>
 
@@ -78,7 +85,8 @@
 				      </div>
 				   </div>
 					
-				</form> 
+				</form>
+				</fieldset>	 
 		</div> 
 	</div> <!-- End of 2nd form-------->
 

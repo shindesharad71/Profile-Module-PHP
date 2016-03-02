@@ -42,8 +42,10 @@ $pic = $pic->fetch_object()->pic;
 			<div class="col-md-7 text-left">
 				<h3><?php echo $name->fetch_object()->name; ?></h3>
 				<h3><?php echo $email->fetch_object()->email; ?></h3><br>
-				<a href="logout.php">logout</a>
 			</div>
 
 		</div>
 	</div>
+<?php
+	include 'footer.php';
+?>
