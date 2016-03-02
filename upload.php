@@ -23,16 +23,6 @@ include 'header.php';
 		      $file_size =$_FILES['image']['size'];
 		      $file_tmp =$_FILES['image']['tmp_name'];
 		      $file_type=$_FILES['image']['type'];
-
-		      /* $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-		      
-		      $expensions= array("jpeg","jpg","png");
-		      
-		      if(in_array($file_ext,$expensions)=== false){
-		         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-		      }
-
-		      */
 		      
 		      if($file_size > 2097152){
 		         $errors[]='File size must be excately 2 MB';
@@ -43,7 +33,7 @@ include 'header.php';
 		         $addr = 'img/'.$file_name;
           		$q = "UPDATE students SET pic='$addr' WHERE username='$username'";
    				mysqli_query($con,$q);
-         		header('Location:profile.php');
+         		echo '<script>setTimeout(function () { window.location.href = "profile.php";}, 2000);</script>';
          		
 
 		      }else{
