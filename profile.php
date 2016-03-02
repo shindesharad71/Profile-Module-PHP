@@ -1,13 +1,13 @@
 <?php
 session_start();
 include 'connect.php';
-$title = $_SESSION['username'].' - Profile';
+$title = 'Profile';
 include 'header.php';
 
 if(!isset($_SESSION['username']))
 {
 	echo '<b>you are not logged in! login first</b>';
-	header('Refresh: 2;url=index.php');
+	echo '<script>setTimeout(function () { window.location.href = "index.php";}, 2000);</script>';
 	die();
 	
 }

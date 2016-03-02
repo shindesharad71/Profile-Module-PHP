@@ -45,8 +45,8 @@ include 'header.php';
 		         $addr = 'img/'.$file_name;
           		$q = "UPDATE students SET pic='$addr' WHERE username='$username'";
    				mysqli_query($con,$q);
-         		$rows = mysqli_affected_rows($con);
-         		header('location: profile.php');
+         		header('profile.php');
+         		
 
 		      }else{
 		         print_r($errors);

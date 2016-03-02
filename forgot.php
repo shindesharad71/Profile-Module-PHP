@@ -20,7 +20,7 @@ if(isset($_POST['forgot']))
 	else
 	{
 		echo '<h3 class="alert alert-danger">you entered wrong username and Answer combination, try again</h3>';
-		header('Refresh: 2;url = frgt.php');
+		echo '<script>setTimeout(function () { window.location.href = "frgt.php";}, 2000);</script>';
 		die();
 	}
 }

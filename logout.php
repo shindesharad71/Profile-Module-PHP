@@ -9,7 +9,7 @@ echo 'error in logout';
 else
 {
 	echo '<br><br><div class="container"><h3 class="text-center">logout successfully! redirecting you to login page</h3></div>';
-	header('Refresh: 1;url=index.php');
+	echo '<script>setTimeout(function () { window.location.href = "index.php";}, 2000);</script>';
 }
 
 ?>

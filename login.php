@@ -21,13 +21,13 @@ if(isset($_POST['login']))
 			echo '<br><br><div class="container">
 			<h3 class="text-center">Welcome <b>'.$_SESSION['username'];
 			echo '</b>  login successfully!</h3></div>';
-			header('Refresh: 1;url=profile.php');
+			echo '<script>setTimeout(function () { window.location.href = "profile.php";}, 2000);</script>';
 		} 
 		else 
 		{
 			echo '<br><br><h3 class="text-center alert alert-danger">Username or Password is invalid!<br/>';
 			echo 'redirecting to login page!</h3>';
-			header('Refresh: 1;url=index.php');
+			echo '<script>setTimeout(function () { window.location.href = "index.php";}, 2000);</script>';
 		}
 	}
 

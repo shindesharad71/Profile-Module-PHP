@@ -1,6 +1,10 @@
 <?php
+
 	include 'connect.php';
 	session_start();
+	$title = 'redirecting.....';
+	include 'header.php';
+	
 	if(isset($_POST['signup']))
 	{
 		$name = $_POST['name'];
@@ -19,14 +23,11 @@
 		$nick = stripcslashes($nick);
 
 
-		$q = "INSERT into students (name, email, username, password, pic, nick) VALUES ('$name','$email','$username','$password','../img/user.jpg', '$nick')";
+		$q = "INSERT into students (name, email, username, password, pic, nick) VALUES ('$name','$email','$username','$password','img/user.jpg', '$nick')";
 
 		mysqli_query($con,$q);
-		$s = mysqli_affected_rows($con);
-		echo $s.' user is successfully registerd </br>';
-		$_SESSION['username'] = $username;
-		echo 'redirecting to <a href="profile.php">Profile</a> page!';
-		header('Refresh: 1;url=profile.php');
+		echo '<br><br><h3 class="text-center">redirecting to <a href="profile.php">login</a> page!</h3>';
+		echo '<script>setTimeout(function () { window.location.href = "index.php";}, 2000);</script>';
 	}
 
 	mysqli_close($con);
