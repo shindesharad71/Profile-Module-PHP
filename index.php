@@ -1,7 +1,11 @@
 <?php
+	session_start();
 	$title = 'Sign in & Sign up';
 	include 'header.php';
-
+	if(isset($_SESSION['username']))
+	{
+		echo '<script>setTimeout(function () { window.location.href = "profile.php";}, 2000);</script>';
+	}
 ?>
 
 <div class="container-fluid">
