@@ -26,6 +26,13 @@
 		         <input type = "text" class = "form-control" name = "name" placeholder = "Enter Full Name" maxlength="25" required>
 		      </div>
 		   </div>
+
+		   <div class = "form-group">
+		      <div class = "col-sm-10 col-md-7">
+		      	<label>Date of Birth</label>
+		         <input type = "text" class = "form-control" name = "dob" placeholder = "DD/MM/YYYY" maxlength="25" required>
+		      </div>
+		   </div>
 		   
 		   <div class = "form-group">
 		      <div class = "col-sm-10 col-md-7">
