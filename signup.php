@@ -11,7 +11,6 @@
 		$name = stripcslashes($name);
 
 		$dob = $_POST['dob'];
-		$dob = stripcslashes($dob);
 
 		$email = $_POST['email'];
 		$email = stripcslashes($email);
