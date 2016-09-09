@@ -10,7 +10,7 @@
 
 <div class="container-fluid">
 	<div class="text-center">
-		<h1>Sign In and Sign up Form</h1>
+		<h1>Sign In and Sign up</h1>
 	</div>
 </div>
 <br><br>
