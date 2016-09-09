@@ -26,7 +26,7 @@ echo '<div class="container">
 		<th>Nick Name</th>
 	</tr>';
 
-$sql = "SELECT name, email, username, password, nick FROM students";
+$sql = "SELECT * FROM students";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {

@@ -4,7 +4,7 @@
 	include 'header.php';
 	if(isset($_SESSION['username']))
 	{
-		echo '<script>setTimeout(function () { window.location.href = "profile.php";}, 2000);</script>';
+		echo '<script>setTimeout(function () { window.location.href = "profile.php";}, 1000);</script>';
 	}
 ?>
 
