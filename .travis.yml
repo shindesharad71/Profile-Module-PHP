@@ -1,3 +1,6 @@
+language: php
+
+# list any PHP version you want to test against
 php:
   # using major version aliases
 
@@ -15,7 +18,3 @@ php:
   - 7.0
   # aliased to a recent hhvm version
   - hhvm
-
-# optionally specify a list of environments, for example to test different RDBMS
-env:
-  - DB=mysql
